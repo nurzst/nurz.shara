@@ -1,0 +1,109 @@
+/* ---- Основные стили ---- */
+body {
+    background-color: #1e1e2f; /* Темный фон */
+    color: white; /* Белый текст */
+    font-family: Arial, sans-serif; /* Красивый шрифт */
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---- Заголовок ---- */
+h1 {
+    font-size: 36px;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ---- Кнопки ---- */
+button {
+    background-color: #ff9800;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Закругленные края */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    animation: pulse 2s infinite;
+}
+
+button:hover {
+    background-color: #e68900;
+    transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* ---- Меню навигации ---- */
+nav {
+    background-color: #29293d;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+    color: black;
+    border-radius: 5px;
+}
+
+/* ---- Анимация ---- */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/* ---- Меню навигации ---- */
+nav {
+    background-color: #29293d; /* Тёмно-синий фон */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: color 0.3s, background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ff9800;
+    color: black;
+    border-radius: 5px;
+}
