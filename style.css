@@ -1,81 +1,20 @@
 /* ---- Основные стили ---- */
 body {
-    background-color: #1e1e2f; /* Темный фон */
-    color: white; /* Белый текст */
-    font-family: Arial, sans-serif; /* Красивый шрифт */
+    background-color: #f0f0f0; /* Серый фон */
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
 }
 
-/* ---- Заголовок ---- */
+/* ---- Заголовки и текст ---- */
 h1 {
-    font-size: 36px;
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.3);
-    animation: fadeIn 1.5s ease-in-out;
+    color: darkgreen;
 }
 
-/* ---- Кнопки ---- */
-button {
-    background-color: #ff9800;
-    color: white;
-    font-size: 18px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px; /* Закругленные края */
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-    animation: pulse 2s infinite;
-}
-
-button:hover {
-    background-color: #e68900;
-    transform: scale(1.05); /* Увеличение при наведении */
-}
-
-/* ---- Меню навигации ---- */
-nav {
-    background-color: #29293d;
-    padding: 15px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px 16px;
-    transition: color 0.3s, background 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #ff9800;
+p {
     color: black;
-    border-radius: 5px;
+    font-size: 25px;
 }
 
-/* ---- Анимация ---- */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
 /* ---- Меню навигации ---- */
 nav {
     background-color: #29293d; /* Тёмно-синий фон */
@@ -106,4 +45,28 @@ nav ul li a:hover {
     background-color: #ff9800;
     color: black;
     border-radius: 5px;
+}
+
+/* ---- Картинка ---- */
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ---- Кнопка ---- */
+.btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #e68900;
 }
