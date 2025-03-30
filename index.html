@@ -4,25 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой стильный сайт</title>
-
-    <!-- Подключение внешнего CSS-файла -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Навигационное меню -->
     <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
             <li><a href="about.html">О нас</a></li>
             <li><a href="contact.html">Контакты</a></li>
+            <li><a href="blog.html">Блог</a></li>
         </ul>
     </nav>
 
     <h1>Как держать сердце чистым в Рамадан?</h1>
 
-    <!-- Исправленный путь к картинке -->
-    <img src="./images/ramadan.jpg" alt="Рамадан" width="500">
+    <img src="images/ramadan.jpg" alt="Рамадан" width="500">
 
     <p>Рамадан — время духовного очищения. Вот несколько простых, но важных советов:</p>
     <p>
@@ -33,6 +30,28 @@
         5️⃣ Прощение – освободи сердце от обид, ведь Аллах любит прощающих.
     </p>
     <p>🕌 Пусть этот Рамадан сделает нас лучше!</p>
+
+    <button onclick="scrollToTop()" id="topBtn">↑ Наверх</button>
+
+    <footer>
+        <p>&copy; 2025 Мой стильный сайт. Все права защищены.</p>
+    </footer>
+
+    <script>
+        let topButton = document.getElementById("topBtn");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                topButton.style.display = "block";
+            } else {
+                topButton.style.display = "none";
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+    </script>
 
 </body>
 </html>
